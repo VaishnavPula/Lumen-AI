@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Chat - Lumen</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/chat.css">
+
+</head>
+
+
+<body class="chat-page">
+
+
+    <!-- Main App -->
+
+    <div class="app">
+
+
+        <!-- Sidebar -->
+
+        <aside
+            class="sidebar"
+            id="sidebar">
+
+            <div class="sidebar-top">
+
+                <a class="brand" href="/">
+
+                    <span class="logo">L</span>
+
+                    Lumen
+
+                </a>
+
+
+                <button
+                    class="btn btn-primary btn-block"
+                    id="new-chat-btn"
+                    type="button">
+
+                    + New chat
+
+                </button>
+
+            </div>
+
+
+            <!-- Chat History -->
+
+            <div class="sidebar-history">
+
+                <h2>Chat history</h2>
+
+                <ul id="history-list"></ul>
+
+                <p
+                    class="muted small"
+                    id="history-empty"
+                    hidden>
+
+                    Your chats will show up here.
+
+                </p>
+
+            </div>
+
+
+            <!-- User -->
+
+            <div class="sidebar-user">
+
+                <span class="avatar">
+                    U
+                </span>
+
+                <span class="user-name">
+                    User
+                </span>
+
+                <a
+                    class="btn btn-ghost btn-sm"
+                    href="/logout">
+
+                    Log out
+
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- Overlay -->
+
+        <div
+            class="overlay"
+            id="overlay"
+            hidden>
+        </div>
+
+
+        <!-- Chat Area -->
+
+        <section class="chat-main">
+
+
+            <!-- Header -->
+
+            <header class="chat-header">
+
+
+                <!-- Sidebar Button -->
+
+                <button
+                    class="icon-btn"
+                    id="sidebar-toggle"
+                    type="button">
+
+                    ☰
+
+                </button>
+
+
+                <!-- Chat Title -->
+
+                <div class="chat-heading">
+
+                    <h1 id="chat-title">
+                        Lumen
+                    </h1>
+
+                    <span class="status">
+
+                        <span class="dot-online"></span>
+
+                        Online
+
+                    </span>
+
+                </div>
+
+
+                <!-- Delete Chat -->
+
+                <button
+                    class="icon-btn"
+                    id="delete-chat-btn"
+                    type="button"
+                    title="Delete this chat"
+                    hidden>
+
+                    🗑️
+
+                </button>
+
+
+                <!-- Dark Mode -->
+
+                <button
+                    class="icon-btn theme-toggle"
+                    type="button">
+
+                    🌙
+
+                </button>
+
+
+            </header>
+
+
+            <!-- Messages -->
+
+            <div
+                class="messages"
+                id="messages">
+
+
+                <!-- Welcome -->
+
+                <div
+                    class="welcome"
+                    id="welcome">
+
+                    <div class="welcome-mark">
+                        L
+                    </div>
+
+
+                    <h2>
+                        What can I help you with?
+                    </h2>
+
+
+                    <p class="muted">
+                        Pick a starter or type your own question below.
+                    </p>
+
+
+                    <!-- Suggestions -->
+
+                    <div class="suggestions">
+
+
+                        <button
+                            type="button"
+                            class="suggestion">
+
+                            Explain Python OOP
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="suggestion">
+
+                            Help me debug my code
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="suggestion">
+
+                            Explain machine learning
+
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Message Input -->
+
+            <form
+                class="composer"
+                id="chat-form">
+
+
+                <div class="composer-box">
+
+
+                    <textarea
+                        id="message-input"
+                        rows="1"
+                        maxlength="2000"
+                        placeholder="Type your message..."></textarea>
+
+
+                    <button
+                        class="btn btn-primary"
+                        id="send-btn"
+                        type="submit">
+
+                        Send
+
+                    </button>
+
+                </div>
+
+
+                <div class="composer-foot">
+
+                    <span>
+                        Enter to send - Shift + Enter for a new line
+                    </span>
+
+                    <span id="char-count">
+                        0 / 2000
+                    </span>
+
+                </div>
+
+            </form>
+
+
+        </section>
+
+    </div>
+
+
+    <script src="/static/js/main.js"></script>
+
+    <script src="/static/js/chat.js"></script>
+
+
+</body>
+
+</html>

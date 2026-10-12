@@ -1,0 +1,227 @@
+/* =========================
+   LOGIN AND REGISTER
+   ========================= */
+
+
+.auth-page {
+
+    display: grid;
+
+    place-items: center;
+
+    padding: 24px;
+
+    min-height: 100%;
+
+}
+
+
+.auth-card {
+
+    width: 100%;
+
+    max-width: 420px;
+
+    background: white;
+
+    border: 1px solid #d9e1df;
+
+    border-radius: 18px;
+
+    padding: 32px;
+
+}
+
+
+.auth-card h1 {
+
+    font-size: 26px;
+
+    margin: 24px 0 5px;
+
+}
+
+
+.auth-card form {
+
+    margin-top: 22px;
+
+}
+
+
+.auth-card label {
+
+    display: block;
+
+    font-weight: bold;
+
+    font-size: 15px;
+
+    margin: 16px 0 6px;
+
+}
+
+
+.hint {
+
+    font-weight: normal;
+
+    color: #5b6b68;
+
+}
+
+
+.auth-card input {
+
+    width: 100%;
+
+    padding: 11px 14px;
+
+    border-radius: 10px;
+
+    border: 1px solid #b8c5c2;
+
+    background: white;
+
+    color: #12201e;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+
+}
+
+
+.auth-card input:focus {
+
+    outline: 3px solid #d6efe9;
+
+    border-color: #0e7c6b;
+
+}
+
+
+/* Password field */
+
+.password-field {
+
+    position: relative;
+
+}
+
+
+.password-field input {
+
+    padding-right: 70px;
+
+}
+
+
+.show-password {
+
+    position: absolute;
+
+    right: 8px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    background: none;
+
+    border: none;
+
+    color: #0e7c6b;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+/* Submit button */
+
+.auth-card .btn-block {
+
+    margin-top: 24px;
+
+}
+
+
+/* Login/Register link */
+
+.switch {
+
+    text-align: center;
+
+    margin: 21px 0 0;
+
+    color: #5b6b68;
+
+}
+
+
+/* Error message */
+
+.field-error {
+
+    color: #b3261e;
+
+    font-size: 14px;
+
+    margin: 6px 0 0;
+
+}
+
+
+/* =========================
+   DARK MODE
+   ========================= */
+
+
+body.dark-mode .auth-card {
+
+    background: #17221f;
+
+    border-color: #263632;
+
+}
+
+
+body.dark-mode .auth-card input {
+
+    background: #0f1715;
+
+    color: #e6efed;
+
+    border-color: #263632;
+
+}
+
+
+body.dark-mode .auth-card input:focus {
+
+    border-color: #35c2a8;
+
+    outline-color: #17352f;
+
+}
+
+
+body.dark-mode .hint {
+
+    color: #8fa39f;
+
+}
+
+
+body.dark-mode .switch {
+
+    color: #8fa39f;
+
+}
