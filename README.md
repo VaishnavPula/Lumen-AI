@@ -174,16 +174,6 @@ The objective of Lumen is to develop an interactive AI chatbot application that 
 
 The project demonstrates the integration of a large language model into a full-stack web application.
 
-## 🔮 Future Enhancements
-
-- Voice-based conversations
-- Image and document uploads
-- AI-powered document analysis
-- Multiple AI model support
-- Chat export functionality
-- Advanced conversation search
-- Multilingual chatbot support
-- Cloud deployment
 
 ## 🔧 Troubleshooting
 
